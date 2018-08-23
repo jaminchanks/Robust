@@ -1,5 +1,6 @@
 package com.meituan.robust;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -38,8 +39,8 @@ public class Constants {
     public static final String ROBUST_GENERATE_DIRECTORY = "outputs/robust";
 
     //FILE_MD5_PATH is a copy from RobustTransform.FILE_MD5_PATH ,please make sure the two is the same
-    public static final String METHOD_MAP_PATH = "/robust/methodsMap.robust";
-    public static final String DEFAULT_MAPPING_FILE = "/robust/mapping.txt";
+    public static final String METHOD_MAP_PATH = File.separator + "robust" + File.separator + "methodsMap.robust";
+    public static final String DEFAULT_MAPPING_FILE = File.separator + "robust " + File.separator + "mapping.txt";
 
     public static final String SMALI_INVOKE_SUPER_COMMAND = "invoke-super";
     public static final String SMALI_INVOKE_VIRTUAL_COMMAND = "invoke-virtual";
